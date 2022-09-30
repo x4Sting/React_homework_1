@@ -1,0 +1,8 @@
+.array-counters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    border: 2px solid;
+}

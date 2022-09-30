@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import ArrayCounters from "./Components/ArrayCounters";
+import ClassCounter from "./Components/ClassCounter";
+import ControlledArrayCounters from "./Components/ControlledArrayCounters";
+import FuncCounter from "./Components/FuncCounter";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render(){
+    return ( 
+      <div className = "root-block">
+        <ClassCounter header = "Class counter"/>
+        <FuncCounter header = "Func counter"/>
+        <ArrayCounters header = "Array counters"/>
+        <ControlledArrayCounters header = "Controlled array of counters"/>
+
+      </div>
+    );
+  };
 }
 
 export default App;

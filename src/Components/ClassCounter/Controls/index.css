@@ -1,0 +1,10 @@
+.control {
+    margin: 10px 0;
+}
+
+.control__button{
+    margin: 0 10px 0 5px;
+    border-radius: 5px;
+    border: 1px solid;
+    padding: 7px 10px;
+}
